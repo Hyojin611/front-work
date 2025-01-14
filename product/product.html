@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/product.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <fieldset>
+        <legend>상품 선택</legend>
+        <ul>
+         
+          <h3>주문할 상품을 선택해 주세요.</h3>
+          <input type="checkbox" name="gift" id="gift_3">
+          <label for="gift_3">선물용 3kg</label>
+          <input type="text" name="gift" id="gift_3">
+          <label for="gift_3">개 (최대 5개)</label>
+          <br>
+          <input type="checkbox" name="gift" id="gift_5">
+          <label for="gift_5">선물용 5kg</label>
+          <input type="text" name="gift" id="gift_5">
+          <label for="gift_5">개 (최대 3개)</label>
+          <br>
+          <input type="checkbox" name="gift" id="home_3">
+          <label for="gift_3">가정용 3kg</label>
+          <input type="text" name="gift" id="home_3">
+          <label for="home_3">개 (최대 5개)</label>
+      
+          <h3>포장 선택</h3>
+          <input type="radio" id="box_y" name="boxing"> 
+          <label for="box_y">선물 포장</label>
+          <br>
+          <input type="radio" id="box_n" name="boxing">
+          <label for="box_n">선물 포장 안함</label>
+        
+        </ul>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>배송정보</legend>
+        <ul>
+          <li>
+            <label for="p_id">아이디</label>
+            <input type="text" id="p_id" name="p_id"
+            required>
+          </li>
+          <li>
+            <label for="p_add">배송 주소</label>
+            <input type="text" id="p_add" name="p_add"
+            required>
+          </li>
+          <li>
+            <label for="p_email">이메일</label>
+            <input type="email" name = "p_email" id="p_email"> 
+          </li>
+          <li>
+            <label for="p_num">연락처</label>
+            <input type="number" name = "p_num" id="p_num">
+          </li>
+          <li>
+            <label for="p_date">배송지정</label>
+            <input type="date" name="p_date" id="p_date"> 
+            (주문일로부터 최소 3일 이후)
+          </li>
+          <li>
+            <label for="memo">메모</label>
+            <textarea name="memo" id="memo"
+            rows="4" cols="40">
+          </textarea>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
